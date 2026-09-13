@@ -1,0 +1,3612 @@
+{
+  "source_file": "hand_imu_bigdata.h5",
+  "num_trials": 400,
+  "label_mapping": {
+    "finger_tap": 0,
+    "fist_clench": 1,
+    "pinch_precision": 2,
+    "wrist_rotation_wave": 3
+  },
+  "labels": [
+    {
+      "trial_name": "trial_000000",
+      "trial_id": 0,
+      "subject_id": "SUBJ_001",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000001",
+      "trial_id": 1,
+      "subject_id": "SUBJ_001",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000002",
+      "trial_id": 2,
+      "subject_id": "SUBJ_001",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000003",
+      "trial_id": 3,
+      "subject_id": "SUBJ_001",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000004",
+      "trial_id": 4,
+      "subject_id": "SUBJ_001",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000005",
+      "trial_id": 5,
+      "subject_id": "SUBJ_001",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000006",
+      "trial_id": 6,
+      "subject_id": "SUBJ_001",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000007",
+      "trial_id": 7,
+      "subject_id": "SUBJ_001",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000008",
+      "trial_id": 8,
+      "subject_id": "SUBJ_001",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000009",
+      "trial_id": 9,
+      "subject_id": "SUBJ_001",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000010",
+      "trial_id": 10,
+      "subject_id": "SUBJ_001",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000011",
+      "trial_id": 11,
+      "subject_id": "SUBJ_001",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000012",
+      "trial_id": 12,
+      "subject_id": "SUBJ_001",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000013",
+      "trial_id": 13,
+      "subject_id": "SUBJ_001",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000014",
+      "trial_id": 14,
+      "subject_id": "SUBJ_001",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1090,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000015",
+      "trial_id": 15,
+      "subject_id": "SUBJ_001",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 436,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000016",
+      "trial_id": 16,
+      "subject_id": "SUBJ_001",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 436,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000017",
+      "trial_id": 17,
+      "subject_id": "SUBJ_001",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 436,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000018",
+      "trial_id": 18,
+      "subject_id": "SUBJ_001",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 436,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000019",
+      "trial_id": 19,
+      "subject_id": "SUBJ_001",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 436,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000020",
+      "trial_id": 20,
+      "subject_id": "SUBJ_002",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000021",
+      "trial_id": 21,
+      "subject_id": "SUBJ_002",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000022",
+      "trial_id": 22,
+      "subject_id": "SUBJ_002",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000023",
+      "trial_id": 23,
+      "subject_id": "SUBJ_002",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000024",
+      "trial_id": 24,
+      "subject_id": "SUBJ_002",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000025",
+      "trial_id": 25,
+      "subject_id": "SUBJ_002",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000026",
+      "trial_id": 26,
+      "subject_id": "SUBJ_002",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000027",
+      "trial_id": 27,
+      "subject_id": "SUBJ_002",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000028",
+      "trial_id": 28,
+      "subject_id": "SUBJ_002",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000029",
+      "trial_id": 29,
+      "subject_id": "SUBJ_002",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000030",
+      "trial_id": 30,
+      "subject_id": "SUBJ_002",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000031",
+      "trial_id": 31,
+      "subject_id": "SUBJ_002",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000032",
+      "trial_id": 32,
+      "subject_id": "SUBJ_002",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000033",
+      "trial_id": 33,
+      "subject_id": "SUBJ_002",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000034",
+      "trial_id": 34,
+      "subject_id": "SUBJ_002",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 806,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000035",
+      "trial_id": 35,
+      "subject_id": "SUBJ_002",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 323,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000036",
+      "trial_id": 36,
+      "subject_id": "SUBJ_002",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 323,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000037",
+      "trial_id": 37,
+      "subject_id": "SUBJ_002",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 323,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000038",
+      "trial_id": 38,
+      "subject_id": "SUBJ_002",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 323,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000039",
+      "trial_id": 39,
+      "subject_id": "SUBJ_002",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 323,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000040",
+      "trial_id": 40,
+      "subject_id": "SUBJ_003",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000041",
+      "trial_id": 41,
+      "subject_id": "SUBJ_003",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000042",
+      "trial_id": 42,
+      "subject_id": "SUBJ_003",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000043",
+      "trial_id": 43,
+      "subject_id": "SUBJ_003",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000044",
+      "trial_id": 44,
+      "subject_id": "SUBJ_003",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000045",
+      "trial_id": 45,
+      "subject_id": "SUBJ_003",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000046",
+      "trial_id": 46,
+      "subject_id": "SUBJ_003",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000047",
+      "trial_id": 47,
+      "subject_id": "SUBJ_003",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000048",
+      "trial_id": 48,
+      "subject_id": "SUBJ_003",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000049",
+      "trial_id": 49,
+      "subject_id": "SUBJ_003",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000050",
+      "trial_id": 50,
+      "subject_id": "SUBJ_003",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000051",
+      "trial_id": 51,
+      "subject_id": "SUBJ_003",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000052",
+      "trial_id": 52,
+      "subject_id": "SUBJ_003",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000053",
+      "trial_id": 53,
+      "subject_id": "SUBJ_003",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000054",
+      "trial_id": 54,
+      "subject_id": "SUBJ_003",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 981,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000055",
+      "trial_id": 55,
+      "subject_id": "SUBJ_003",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 393,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000056",
+      "trial_id": 56,
+      "subject_id": "SUBJ_003",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 393,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000057",
+      "trial_id": 57,
+      "subject_id": "SUBJ_003",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 393,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000058",
+      "trial_id": 58,
+      "subject_id": "SUBJ_003",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 393,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000059",
+      "trial_id": 59,
+      "subject_id": "SUBJ_003",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 393,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000060",
+      "trial_id": 60,
+      "subject_id": "SUBJ_004",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000061",
+      "trial_id": 61,
+      "subject_id": "SUBJ_004",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000062",
+      "trial_id": 62,
+      "subject_id": "SUBJ_004",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000063",
+      "trial_id": 63,
+      "subject_id": "SUBJ_004",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000064",
+      "trial_id": 64,
+      "subject_id": "SUBJ_004",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000065",
+      "trial_id": 65,
+      "subject_id": "SUBJ_004",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000066",
+      "trial_id": 66,
+      "subject_id": "SUBJ_004",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000067",
+      "trial_id": 67,
+      "subject_id": "SUBJ_004",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000068",
+      "trial_id": 68,
+      "subject_id": "SUBJ_004",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000069",
+      "trial_id": 69,
+      "subject_id": "SUBJ_004",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000070",
+      "trial_id": 70,
+      "subject_id": "SUBJ_004",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000071",
+      "trial_id": 71,
+      "subject_id": "SUBJ_004",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000072",
+      "trial_id": 72,
+      "subject_id": "SUBJ_004",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000073",
+      "trial_id": 73,
+      "subject_id": "SUBJ_004",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000074",
+      "trial_id": 74,
+      "subject_id": "SUBJ_004",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 811,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000075",
+      "trial_id": 75,
+      "subject_id": "SUBJ_004",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 325,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000076",
+      "trial_id": 76,
+      "subject_id": "SUBJ_004",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 325,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000077",
+      "trial_id": 77,
+      "subject_id": "SUBJ_004",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 325,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000078",
+      "trial_id": 78,
+      "subject_id": "SUBJ_004",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 325,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000079",
+      "trial_id": 79,
+      "subject_id": "SUBJ_004",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 325,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000080",
+      "trial_id": 80,
+      "subject_id": "SUBJ_005",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000081",
+      "trial_id": 81,
+      "subject_id": "SUBJ_005",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000082",
+      "trial_id": 82,
+      "subject_id": "SUBJ_005",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000083",
+      "trial_id": 83,
+      "subject_id": "SUBJ_005",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000084",
+      "trial_id": 84,
+      "subject_id": "SUBJ_005",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000085",
+      "trial_id": 85,
+      "subject_id": "SUBJ_005",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000086",
+      "trial_id": 86,
+      "subject_id": "SUBJ_005",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000087",
+      "trial_id": 87,
+      "subject_id": "SUBJ_005",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000088",
+      "trial_id": 88,
+      "subject_id": "SUBJ_005",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000089",
+      "trial_id": 89,
+      "subject_id": "SUBJ_005",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000090",
+      "trial_id": 90,
+      "subject_id": "SUBJ_005",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000091",
+      "trial_id": 91,
+      "subject_id": "SUBJ_005",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000092",
+      "trial_id": 92,
+      "subject_id": "SUBJ_005",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000093",
+      "trial_id": 93,
+      "subject_id": "SUBJ_005",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000094",
+      "trial_id": 94,
+      "subject_id": "SUBJ_005",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1076,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000095",
+      "trial_id": 95,
+      "subject_id": "SUBJ_005",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 431,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000096",
+      "trial_id": 96,
+      "subject_id": "SUBJ_005",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 431,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000097",
+      "trial_id": 97,
+      "subject_id": "SUBJ_005",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 431,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000098",
+      "trial_id": 98,
+      "subject_id": "SUBJ_005",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 431,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000099",
+      "trial_id": 99,
+      "subject_id": "SUBJ_005",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 431,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000100",
+      "trial_id": 100,
+      "subject_id": "SUBJ_006",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000101",
+      "trial_id": 101,
+      "subject_id": "SUBJ_006",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000102",
+      "trial_id": 102,
+      "subject_id": "SUBJ_006",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000103",
+      "trial_id": 103,
+      "subject_id": "SUBJ_006",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000104",
+      "trial_id": 104,
+      "subject_id": "SUBJ_006",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000105",
+      "trial_id": 105,
+      "subject_id": "SUBJ_006",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000106",
+      "trial_id": 106,
+      "subject_id": "SUBJ_006",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000107",
+      "trial_id": 107,
+      "subject_id": "SUBJ_006",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000108",
+      "trial_id": 108,
+      "subject_id": "SUBJ_006",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000109",
+      "trial_id": 109,
+      "subject_id": "SUBJ_006",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000110",
+      "trial_id": 110,
+      "subject_id": "SUBJ_006",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000111",
+      "trial_id": 111,
+      "subject_id": "SUBJ_006",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000112",
+      "trial_id": 112,
+      "subject_id": "SUBJ_006",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000113",
+      "trial_id": 113,
+      "subject_id": "SUBJ_006",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000114",
+      "trial_id": 114,
+      "subject_id": "SUBJ_006",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 766,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000115",
+      "trial_id": 115,
+      "subject_id": "SUBJ_006",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 307,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000116",
+      "trial_id": 116,
+      "subject_id": "SUBJ_006",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 307,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000117",
+      "trial_id": 117,
+      "subject_id": "SUBJ_006",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 307,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000118",
+      "trial_id": 118,
+      "subject_id": "SUBJ_006",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 307,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000119",
+      "trial_id": 119,
+      "subject_id": "SUBJ_006",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 307,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000120",
+      "trial_id": 120,
+      "subject_id": "SUBJ_007",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000121",
+      "trial_id": 121,
+      "subject_id": "SUBJ_007",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000122",
+      "trial_id": 122,
+      "subject_id": "SUBJ_007",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000123",
+      "trial_id": 123,
+      "subject_id": "SUBJ_007",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000124",
+      "trial_id": 124,
+      "subject_id": "SUBJ_007",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000125",
+      "trial_id": 125,
+      "subject_id": "SUBJ_007",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000126",
+      "trial_id": 126,
+      "subject_id": "SUBJ_007",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000127",
+      "trial_id": 127,
+      "subject_id": "SUBJ_007",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000128",
+      "trial_id": 128,
+      "subject_id": "SUBJ_007",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000129",
+      "trial_id": 129,
+      "subject_id": "SUBJ_007",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000130",
+      "trial_id": 130,
+      "subject_id": "SUBJ_007",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000131",
+      "trial_id": 131,
+      "subject_id": "SUBJ_007",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000132",
+      "trial_id": 132,
+      "subject_id": "SUBJ_007",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000133",
+      "trial_id": 133,
+      "subject_id": "SUBJ_007",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000134",
+      "trial_id": 134,
+      "subject_id": "SUBJ_007",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 990,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000135",
+      "trial_id": 135,
+      "subject_id": "SUBJ_007",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 396,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000136",
+      "trial_id": 136,
+      "subject_id": "SUBJ_007",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 396,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000137",
+      "trial_id": 137,
+      "subject_id": "SUBJ_007",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 396,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000138",
+      "trial_id": 138,
+      "subject_id": "SUBJ_007",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 396,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000139",
+      "trial_id": 139,
+      "subject_id": "SUBJ_007",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 396,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000140",
+      "trial_id": 140,
+      "subject_id": "SUBJ_008",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000141",
+      "trial_id": 141,
+      "subject_id": "SUBJ_008",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000142",
+      "trial_id": 142,
+      "subject_id": "SUBJ_008",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000143",
+      "trial_id": 143,
+      "subject_id": "SUBJ_008",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000144",
+      "trial_id": 144,
+      "subject_id": "SUBJ_008",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000145",
+      "trial_id": 145,
+      "subject_id": "SUBJ_008",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000146",
+      "trial_id": 146,
+      "subject_id": "SUBJ_008",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000147",
+      "trial_id": 147,
+      "subject_id": "SUBJ_008",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000148",
+      "trial_id": 148,
+      "subject_id": "SUBJ_008",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000149",
+      "trial_id": 149,
+      "subject_id": "SUBJ_008",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000150",
+      "trial_id": 150,
+      "subject_id": "SUBJ_008",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000151",
+      "trial_id": 151,
+      "subject_id": "SUBJ_008",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000152",
+      "trial_id": 152,
+      "subject_id": "SUBJ_008",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000153",
+      "trial_id": 153,
+      "subject_id": "SUBJ_008",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000154",
+      "trial_id": 154,
+      "subject_id": "SUBJ_008",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 921,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000155",
+      "trial_id": 155,
+      "subject_id": "SUBJ_008",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 369,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000156",
+      "trial_id": 156,
+      "subject_id": "SUBJ_008",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 369,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000157",
+      "trial_id": 157,
+      "subject_id": "SUBJ_008",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 369,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000158",
+      "trial_id": 158,
+      "subject_id": "SUBJ_008",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 369,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000159",
+      "trial_id": 159,
+      "subject_id": "SUBJ_008",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 369,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000160",
+      "trial_id": 160,
+      "subject_id": "SUBJ_009",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000161",
+      "trial_id": 161,
+      "subject_id": "SUBJ_009",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000162",
+      "trial_id": 162,
+      "subject_id": "SUBJ_009",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000163",
+      "trial_id": 163,
+      "subject_id": "SUBJ_009",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000164",
+      "trial_id": 164,
+      "subject_id": "SUBJ_009",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000165",
+      "trial_id": 165,
+      "subject_id": "SUBJ_009",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000166",
+      "trial_id": 166,
+      "subject_id": "SUBJ_009",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000167",
+      "trial_id": 167,
+      "subject_id": "SUBJ_009",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000168",
+      "trial_id": 168,
+      "subject_id": "SUBJ_009",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000169",
+      "trial_id": 169,
+      "subject_id": "SUBJ_009",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000170",
+      "trial_id": 170,
+      "subject_id": "SUBJ_009",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000171",
+      "trial_id": 171,
+      "subject_id": "SUBJ_009",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000172",
+      "trial_id": 172,
+      "subject_id": "SUBJ_009",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000173",
+      "trial_id": 173,
+      "subject_id": "SUBJ_009",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000174",
+      "trial_id": 174,
+      "subject_id": "SUBJ_009",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 883,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000175",
+      "trial_id": 175,
+      "subject_id": "SUBJ_009",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 353,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000176",
+      "trial_id": 176,
+      "subject_id": "SUBJ_009",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 353,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000177",
+      "trial_id": 177,
+      "subject_id": "SUBJ_009",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 353,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000178",
+      "trial_id": 178,
+      "subject_id": "SUBJ_009",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 353,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000179",
+      "trial_id": 179,
+      "subject_id": "SUBJ_009",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 353,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000180",
+      "trial_id": 180,
+      "subject_id": "SUBJ_010",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000181",
+      "trial_id": 181,
+      "subject_id": "SUBJ_010",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000182",
+      "trial_id": 182,
+      "subject_id": "SUBJ_010",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000183",
+      "trial_id": 183,
+      "subject_id": "SUBJ_010",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000184",
+      "trial_id": 184,
+      "subject_id": "SUBJ_010",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000185",
+      "trial_id": 185,
+      "subject_id": "SUBJ_010",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000186",
+      "trial_id": 186,
+      "subject_id": "SUBJ_010",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000187",
+      "trial_id": 187,
+      "subject_id": "SUBJ_010",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000188",
+      "trial_id": 188,
+      "subject_id": "SUBJ_010",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000189",
+      "trial_id": 189,
+      "subject_id": "SUBJ_010",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000190",
+      "trial_id": 190,
+      "subject_id": "SUBJ_010",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000191",
+      "trial_id": 191,
+      "subject_id": "SUBJ_010",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000192",
+      "trial_id": 192,
+      "subject_id": "SUBJ_010",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000193",
+      "trial_id": 193,
+      "subject_id": "SUBJ_010",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000194",
+      "trial_id": 194,
+      "subject_id": "SUBJ_010",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1287,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000195",
+      "trial_id": 195,
+      "subject_id": "SUBJ_010",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 515,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000196",
+      "trial_id": 196,
+      "subject_id": "SUBJ_010",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 515,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000197",
+      "trial_id": 197,
+      "subject_id": "SUBJ_010",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 515,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000198",
+      "trial_id": 198,
+      "subject_id": "SUBJ_010",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 515,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000199",
+      "trial_id": 199,
+      "subject_id": "SUBJ_010",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 515,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000200",
+      "trial_id": 200,
+      "subject_id": "SUBJ_011",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000201",
+      "trial_id": 201,
+      "subject_id": "SUBJ_011",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000202",
+      "trial_id": 202,
+      "subject_id": "SUBJ_011",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000203",
+      "trial_id": 203,
+      "subject_id": "SUBJ_011",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000204",
+      "trial_id": 204,
+      "subject_id": "SUBJ_011",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000205",
+      "trial_id": 205,
+      "subject_id": "SUBJ_011",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000206",
+      "trial_id": 206,
+      "subject_id": "SUBJ_011",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000207",
+      "trial_id": 207,
+      "subject_id": "SUBJ_011",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000208",
+      "trial_id": 208,
+      "subject_id": "SUBJ_011",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000209",
+      "trial_id": 209,
+      "subject_id": "SUBJ_011",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000210",
+      "trial_id": 210,
+      "subject_id": "SUBJ_011",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000211",
+      "trial_id": 211,
+      "subject_id": "SUBJ_011",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000212",
+      "trial_id": 212,
+      "subject_id": "SUBJ_011",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000213",
+      "trial_id": 213,
+      "subject_id": "SUBJ_011",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000214",
+      "trial_id": 214,
+      "subject_id": "SUBJ_011",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1177,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000215",
+      "trial_id": 215,
+      "subject_id": "SUBJ_011",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 471,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000216",
+      "trial_id": 216,
+      "subject_id": "SUBJ_011",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 471,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000217",
+      "trial_id": 217,
+      "subject_id": "SUBJ_011",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 471,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000218",
+      "trial_id": 218,
+      "subject_id": "SUBJ_011",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 471,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000219",
+      "trial_id": 219,
+      "subject_id": "SUBJ_011",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 471,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000220",
+      "trial_id": 220,
+      "subject_id": "SUBJ_012",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000221",
+      "trial_id": 221,
+      "subject_id": "SUBJ_012",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000222",
+      "trial_id": 222,
+      "subject_id": "SUBJ_012",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000223",
+      "trial_id": 223,
+      "subject_id": "SUBJ_012",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000224",
+      "trial_id": 224,
+      "subject_id": "SUBJ_012",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000225",
+      "trial_id": 225,
+      "subject_id": "SUBJ_012",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000226",
+      "trial_id": 226,
+      "subject_id": "SUBJ_012",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000227",
+      "trial_id": 227,
+      "subject_id": "SUBJ_012",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000228",
+      "trial_id": 228,
+      "subject_id": "SUBJ_012",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000229",
+      "trial_id": 229,
+      "subject_id": "SUBJ_012",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000230",
+      "trial_id": 230,
+      "subject_id": "SUBJ_012",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000231",
+      "trial_id": 231,
+      "subject_id": "SUBJ_012",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000232",
+      "trial_id": 232,
+      "subject_id": "SUBJ_012",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000233",
+      "trial_id": 233,
+      "subject_id": "SUBJ_012",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000234",
+      "trial_id": 234,
+      "subject_id": "SUBJ_012",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1298,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000235",
+      "trial_id": 235,
+      "subject_id": "SUBJ_012",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 519,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000236",
+      "trial_id": 236,
+      "subject_id": "SUBJ_012",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 519,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000237",
+      "trial_id": 237,
+      "subject_id": "SUBJ_012",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 519,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000238",
+      "trial_id": 238,
+      "subject_id": "SUBJ_012",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 519,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000239",
+      "trial_id": 239,
+      "subject_id": "SUBJ_012",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 519,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000240",
+      "trial_id": 240,
+      "subject_id": "SUBJ_013",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000241",
+      "trial_id": 241,
+      "subject_id": "SUBJ_013",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000242",
+      "trial_id": 242,
+      "subject_id": "SUBJ_013",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000243",
+      "trial_id": 243,
+      "subject_id": "SUBJ_013",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000244",
+      "trial_id": 244,
+      "subject_id": "SUBJ_013",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000245",
+      "trial_id": 245,
+      "subject_id": "SUBJ_013",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000246",
+      "trial_id": 246,
+      "subject_id": "SUBJ_013",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000247",
+      "trial_id": 247,
+      "subject_id": "SUBJ_013",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000248",
+      "trial_id": 248,
+      "subject_id": "SUBJ_013",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000249",
+      "trial_id": 249,
+      "subject_id": "SUBJ_013",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000250",
+      "trial_id": 250,
+      "subject_id": "SUBJ_013",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000251",
+      "trial_id": 251,
+      "subject_id": "SUBJ_013",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000252",
+      "trial_id": 252,
+      "subject_id": "SUBJ_013",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000253",
+      "trial_id": 253,
+      "subject_id": "SUBJ_013",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000254",
+      "trial_id": 254,
+      "subject_id": "SUBJ_013",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 868,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000255",
+      "trial_id": 255,
+      "subject_id": "SUBJ_013",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 348,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000256",
+      "trial_id": 256,
+      "subject_id": "SUBJ_013",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 348,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000257",
+      "trial_id": 257,
+      "subject_id": "SUBJ_013",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 348,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000258",
+      "trial_id": 258,
+      "subject_id": "SUBJ_013",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 348,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000259",
+      "trial_id": 259,
+      "subject_id": "SUBJ_013",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 348,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000260",
+      "trial_id": 260,
+      "subject_id": "SUBJ_014",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000261",
+      "trial_id": 261,
+      "subject_id": "SUBJ_014",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000262",
+      "trial_id": 262,
+      "subject_id": "SUBJ_014",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000263",
+      "trial_id": 263,
+      "subject_id": "SUBJ_014",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000264",
+      "trial_id": 264,
+      "subject_id": "SUBJ_014",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000265",
+      "trial_id": 265,
+      "subject_id": "SUBJ_014",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000266",
+      "trial_id": 266,
+      "subject_id": "SUBJ_014",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000267",
+      "trial_id": 267,
+      "subject_id": "SUBJ_014",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000268",
+      "trial_id": 268,
+      "subject_id": "SUBJ_014",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000269",
+      "trial_id": 269,
+      "subject_id": "SUBJ_014",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000270",
+      "trial_id": 270,
+      "subject_id": "SUBJ_014",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000271",
+      "trial_id": 271,
+      "subject_id": "SUBJ_014",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000272",
+      "trial_id": 272,
+      "subject_id": "SUBJ_014",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000273",
+      "trial_id": 273,
+      "subject_id": "SUBJ_014",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000274",
+      "trial_id": 274,
+      "subject_id": "SUBJ_014",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1199,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000275",
+      "trial_id": 275,
+      "subject_id": "SUBJ_014",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 480,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000276",
+      "trial_id": 276,
+      "subject_id": "SUBJ_014",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 480,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000277",
+      "trial_id": 277,
+      "subject_id": "SUBJ_014",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 480,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000278",
+      "trial_id": 278,
+      "subject_id": "SUBJ_014",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 480,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000279",
+      "trial_id": 279,
+      "subject_id": "SUBJ_014",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 480,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000280",
+      "trial_id": 280,
+      "subject_id": "SUBJ_015",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000281",
+      "trial_id": 281,
+      "subject_id": "SUBJ_015",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000282",
+      "trial_id": 282,
+      "subject_id": "SUBJ_015",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000283",
+      "trial_id": 283,
+      "subject_id": "SUBJ_015",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000284",
+      "trial_id": 284,
+      "subject_id": "SUBJ_015",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000285",
+      "trial_id": 285,
+      "subject_id": "SUBJ_015",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000286",
+      "trial_id": 286,
+      "subject_id": "SUBJ_015",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000287",
+      "trial_id": 287,
+      "subject_id": "SUBJ_015",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000288",
+      "trial_id": 288,
+      "subject_id": "SUBJ_015",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000289",
+      "trial_id": 289,
+      "subject_id": "SUBJ_015",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000290",
+      "trial_id": 290,
+      "subject_id": "SUBJ_015",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000291",
+      "trial_id": 291,
+      "subject_id": "SUBJ_015",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000292",
+      "trial_id": 292,
+      "subject_id": "SUBJ_015",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000293",
+      "trial_id": 293,
+      "subject_id": "SUBJ_015",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000294",
+      "trial_id": 294,
+      "subject_id": "SUBJ_015",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1098,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000295",
+      "trial_id": 295,
+      "subject_id": "SUBJ_015",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 439,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000296",
+      "trial_id": 296,
+      "subject_id": "SUBJ_015",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 439,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000297",
+      "trial_id": 297,
+      "subject_id": "SUBJ_015",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 439,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000298",
+      "trial_id": 298,
+      "subject_id": "SUBJ_015",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 439,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000299",
+      "trial_id": 299,
+      "subject_id": "SUBJ_015",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 439,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000300",
+      "trial_id": 300,
+      "subject_id": "SUBJ_016",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000301",
+      "trial_id": 301,
+      "subject_id": "SUBJ_016",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000302",
+      "trial_id": 302,
+      "subject_id": "SUBJ_016",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000303",
+      "trial_id": 303,
+      "subject_id": "SUBJ_016",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000304",
+      "trial_id": 304,
+      "subject_id": "SUBJ_016",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000305",
+      "trial_id": 305,
+      "subject_id": "SUBJ_016",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000306",
+      "trial_id": 306,
+      "subject_id": "SUBJ_016",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000307",
+      "trial_id": 307,
+      "subject_id": "SUBJ_016",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000308",
+      "trial_id": 308,
+      "subject_id": "SUBJ_016",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000309",
+      "trial_id": 309,
+      "subject_id": "SUBJ_016",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000310",
+      "trial_id": 310,
+      "subject_id": "SUBJ_016",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000311",
+      "trial_id": 311,
+      "subject_id": "SUBJ_016",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000312",
+      "trial_id": 312,
+      "subject_id": "SUBJ_016",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000313",
+      "trial_id": 313,
+      "subject_id": "SUBJ_016",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000314",
+      "trial_id": 314,
+      "subject_id": "SUBJ_016",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 901,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000315",
+      "trial_id": 315,
+      "subject_id": "SUBJ_016",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 361,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000316",
+      "trial_id": 316,
+      "subject_id": "SUBJ_016",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 361,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000317",
+      "trial_id": 317,
+      "subject_id": "SUBJ_016",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 361,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000318",
+      "trial_id": 318,
+      "subject_id": "SUBJ_016",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 361,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000319",
+      "trial_id": 319,
+      "subject_id": "SUBJ_016",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 361,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000320",
+      "trial_id": 320,
+      "subject_id": "SUBJ_017",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000321",
+      "trial_id": 321,
+      "subject_id": "SUBJ_017",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000322",
+      "trial_id": 322,
+      "subject_id": "SUBJ_017",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000323",
+      "trial_id": 323,
+      "subject_id": "SUBJ_017",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000324",
+      "trial_id": 324,
+      "subject_id": "SUBJ_017",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000325",
+      "trial_id": 325,
+      "subject_id": "SUBJ_017",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000326",
+      "trial_id": 326,
+      "subject_id": "SUBJ_017",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000327",
+      "trial_id": 327,
+      "subject_id": "SUBJ_017",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000328",
+      "trial_id": 328,
+      "subject_id": "SUBJ_017",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000329",
+      "trial_id": 329,
+      "subject_id": "SUBJ_017",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000330",
+      "trial_id": 330,
+      "subject_id": "SUBJ_017",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000331",
+      "trial_id": 331,
+      "subject_id": "SUBJ_017",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000332",
+      "trial_id": 332,
+      "subject_id": "SUBJ_017",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000333",
+      "trial_id": 333,
+      "subject_id": "SUBJ_017",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000334",
+      "trial_id": 334,
+      "subject_id": "SUBJ_017",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1222,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000335",
+      "trial_id": 335,
+      "subject_id": "SUBJ_017",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 489,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000336",
+      "trial_id": 336,
+      "subject_id": "SUBJ_017",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 489,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000337",
+      "trial_id": 337,
+      "subject_id": "SUBJ_017",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 489,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000338",
+      "trial_id": 338,
+      "subject_id": "SUBJ_017",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 489,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000339",
+      "trial_id": 339,
+      "subject_id": "SUBJ_017",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 489,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000340",
+      "trial_id": 340,
+      "subject_id": "SUBJ_018",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000341",
+      "trial_id": 341,
+      "subject_id": "SUBJ_018",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000342",
+      "trial_id": 342,
+      "subject_id": "SUBJ_018",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000343",
+      "trial_id": 343,
+      "subject_id": "SUBJ_018",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000344",
+      "trial_id": 344,
+      "subject_id": "SUBJ_018",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000345",
+      "trial_id": 345,
+      "subject_id": "SUBJ_018",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000346",
+      "trial_id": 346,
+      "subject_id": "SUBJ_018",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000347",
+      "trial_id": 347,
+      "subject_id": "SUBJ_018",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000348",
+      "trial_id": 348,
+      "subject_id": "SUBJ_018",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000349",
+      "trial_id": 349,
+      "subject_id": "SUBJ_018",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000350",
+      "trial_id": 350,
+      "subject_id": "SUBJ_018",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000351",
+      "trial_id": 351,
+      "subject_id": "SUBJ_018",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000352",
+      "trial_id": 352,
+      "subject_id": "SUBJ_018",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000353",
+      "trial_id": 353,
+      "subject_id": "SUBJ_018",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000354",
+      "trial_id": 354,
+      "subject_id": "SUBJ_018",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1272,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000355",
+      "trial_id": 355,
+      "subject_id": "SUBJ_018",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 509,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000356",
+      "trial_id": 356,
+      "subject_id": "SUBJ_018",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 509,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000357",
+      "trial_id": 357,
+      "subject_id": "SUBJ_018",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 509,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000358",
+      "trial_id": 358,
+      "subject_id": "SUBJ_018",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 509,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000359",
+      "trial_id": 359,
+      "subject_id": "SUBJ_018",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 509,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000360",
+      "trial_id": 360,
+      "subject_id": "SUBJ_019",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000361",
+      "trial_id": 361,
+      "subject_id": "SUBJ_019",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000362",
+      "trial_id": 362,
+      "subject_id": "SUBJ_019",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000363",
+      "trial_id": 363,
+      "subject_id": "SUBJ_019",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000364",
+      "trial_id": 364,
+      "subject_id": "SUBJ_019",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000365",
+      "trial_id": 365,
+      "subject_id": "SUBJ_019",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000366",
+      "trial_id": 366,
+      "subject_id": "SUBJ_019",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000367",
+      "trial_id": 367,
+      "subject_id": "SUBJ_019",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000368",
+      "trial_id": 368,
+      "subject_id": "SUBJ_019",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000369",
+      "trial_id": 369,
+      "subject_id": "SUBJ_019",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000370",
+      "trial_id": 370,
+      "subject_id": "SUBJ_019",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000371",
+      "trial_id": 371,
+      "subject_id": "SUBJ_019",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000372",
+      "trial_id": 372,
+      "subject_id": "SUBJ_019",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000373",
+      "trial_id": 373,
+      "subject_id": "SUBJ_019",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000374",
+      "trial_id": 374,
+      "subject_id": "SUBJ_019",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1246,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000375",
+      "trial_id": 375,
+      "subject_id": "SUBJ_019",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 499,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000376",
+      "trial_id": 376,
+      "subject_id": "SUBJ_019",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 499,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000377",
+      "trial_id": 377,
+      "subject_id": "SUBJ_019",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 499,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000378",
+      "trial_id": 378,
+      "subject_id": "SUBJ_019",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 499,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000379",
+      "trial_id": 379,
+      "subject_id": "SUBJ_019",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 499,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000380",
+      "trial_id": 380,
+      "subject_id": "SUBJ_020",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000381",
+      "trial_id": 381,
+      "subject_id": "SUBJ_020",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000382",
+      "trial_id": 382,
+      "subject_id": "SUBJ_020",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000383",
+      "trial_id": 383,
+      "subject_id": "SUBJ_020",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000384",
+      "trial_id": 384,
+      "subject_id": "SUBJ_020",
+      "scenario": "fist_clench",
+      "label_id": 1,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000385",
+      "trial_id": 385,
+      "subject_id": "SUBJ_020",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000386",
+      "trial_id": 386,
+      "subject_id": "SUBJ_020",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000387",
+      "trial_id": 387,
+      "subject_id": "SUBJ_020",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000388",
+      "trial_id": 388,
+      "subject_id": "SUBJ_020",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000389",
+      "trial_id": 389,
+      "subject_id": "SUBJ_020",
+      "scenario": "pinch_precision",
+      "label_id": 2,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000390",
+      "trial_id": 390,
+      "subject_id": "SUBJ_020",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000391",
+      "trial_id": 391,
+      "subject_id": "SUBJ_020",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000392",
+      "trial_id": 392,
+      "subject_id": "SUBJ_020",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000393",
+      "trial_id": 393,
+      "subject_id": "SUBJ_020",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000394",
+      "trial_id": 394,
+      "subject_id": "SUBJ_020",
+      "scenario": "wrist_rotation_wave",
+      "label_id": 3,
+      "num_samples": 1011,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000395",
+      "trial_id": 395,
+      "subject_id": "SUBJ_020",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 405,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000396",
+      "trial_id": 396,
+      "subject_id": "SUBJ_020",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 405,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000397",
+      "trial_id": 397,
+      "subject_id": "SUBJ_020",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 405,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000398",
+      "trial_id": 398,
+      "subject_id": "SUBJ_020",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 405,
+      "sampling_rate_hz": 200
+    },
+    {
+      "trial_name": "trial_000399",
+      "trial_id": 399,
+      "subject_id": "SUBJ_020",
+      "scenario": "finger_tap",
+      "label_id": 0,
+      "num_samples": 405,
+      "sampling_rate_hz": 200
+    }
+  ]
+}
