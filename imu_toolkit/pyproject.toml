@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imu-toolkit"
+version = "1.1.0"
+description = "Module tiền xử lý dữ liệu IMU: mô phỏng nhiễu, trích xuất trọng lực, tiện ích quaternion/Euler"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.20",
+]
+
+[tool.setuptools.packages.find]
+include = ["imu_toolkit*"]
