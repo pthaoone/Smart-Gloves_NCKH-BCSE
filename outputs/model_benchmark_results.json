@@ -1,0 +1,17 @@
+{
+  "task": "Week 7: Compare Small Transformer vs LSTM Baseline",
+  "LSTM": {
+    "parameters": 5252,
+    "train_time_sec": 7.63,
+    "best_val_acc": 98.69,
+    "test_acc": 95.7,
+    "latency_ms": 0.0126
+  },
+  "Transformer": {
+    "parameters": 17508,
+    "train_time_sec": 49.42,
+    "best_val_acc": 100.0,
+    "test_acc": 99.77,
+    "latency_ms": 0.0305
+  }
+}

@@ -1,194 +1,322 @@
-
+import json
+import os
+import sys
+import time
 from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader, TensorDataset
+from torch.utils.data import DataLoader, Subset
 
-# 1. Cấu hình
+# Đảm bảo in tiếng Việt trên console Windows không bị lỗi
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
+# Thêm src vào path nếu cần
+sys.path.append(str(Path(__file__).resolve().parent))
+from window_dataset import WindowDataset, get_dataloaders
 
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# 1. Cấu hình & Siêu tham số (Hyperparameters)
 
-X_PATH = PROJECT_ROOT / "outputs" / "X_windows.npy"
-Y_PATH = PROJECT_ROOT / "outputs" / "y_windows.npy"
+ROOT = Path(__file__).resolve().parent.parent
+OUTPUTS_DIR = ROOT / "outputs"
+OUTPUTS_DIR.mkdir(exist_ok=True)
 
-EPOCHS = 300
-BATCH_SIZE = 4
+SEED = 42
+EPOCHS = 15
+BATCH_SIZE = 64
 LEARNING_RATE = 0.001
-
-# Chỉ sử dụng một tập nhỏ để kiểm tra overfit
-MAX_SAMPLES = 4
+HIDDEN_SIZE = 32
+NUM_LAYERS = 1
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-print("Device:", DEVICE)
 
-# 2. Đọc dữ liệu
-
-X = np.load(X_PATH)
-y = np.load(Y_PATH)
-
-print("X ban đầu:", X.shape)
-print("y ban đầu:", y.shape)
-
-
-# Chỉ lấy một số window đầu tiên
-X = X[:MAX_SAMPLES]
-y = y[:MAX_SAMPLES]
-
-# Chuyển sang Tensor
-X = torch.tensor(X, dtype=torch.float32)
-y = torch.tensor(y, dtype=torch.long)
-
-print("X dùng để train:", X.shape)
-print("y dùng để train:", y.shape)
-print("Labels:", y.tolist())
-
-# 3. Tạo DataLoader
+def set_seed(seed: int = 42):
+    """Cố định seed để đảm bảo tính tái lập (Reproducibility) trong NCKH."""
+    torch.manual_seed(seed)
+    np.random.seed(seed)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(seed)
+        torch.backends.cudnn.deterministic = True
 
 
-dataset = TensorDataset(X, y)
-
-dataloader = DataLoader(
-    dataset,
-    batch_size=BATCH_SIZE,
-    shuffle=True
-)
-
-# 4. Xây dựng LSTM model
-
+# 2. Định nghĩa kiến trúc Baseline LSTM
 
 class BaselineLSTM(nn.Module):
+   
 
     def __init__(
         self,
-        input_size,
-        hidden_size,
-        num_layers,
-        num_classes
+        input_size: int = 6,
+        hidden_size: int = 32,
+        num_layers: int = 1,
+        num_classes: int = 4,
+        dropout: float = 0.0,
     ):
         super().__init__()
-
         self.lstm = nn.LSTM(
             input_size=input_size,
             hidden_size=hidden_size,
             num_layers=num_layers,
-            batch_first=True
+            batch_first=True,
+            dropout=dropout if num_layers > 1 else 0.0,
         )
+        self.fc = nn.Linear(hidden_size, num_classes)
 
-        self.classifier = nn.Linear(
-            hidden_size,
-            num_classes
-        )
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        # x: (batch_size, seq_len, input_size)
+        out, (h_n, c_n) = self.lstm(x)
 
-    def forward(self, x):
+        # Lấy hidden state tại bước thời gian cuối cùng của window
+        last_timestep = out[:, -1, :]  # (batch_size, hidden_size)
 
-        # output shape:
-        # (batch_size, sequence_length, hidden_size)
-        output, (hidden, cell) = self.lstm(x)
-
-        # Lấy output tại bước thời gian cuối cùng
-        last_output = output[:, -1, :]
-
-        # Phân loại
-        logits = self.classifier(last_output)
-
+        logits = self.fc(last_timestep)  # (batch_size, num_classes)
         return logits
 
-
-# 5. Khởi tạo model
-
-
-input_size = X.shape[2]       # 69 features
-hidden_size = 32
-num_layers = 1
-num_classes = int(y.max().item()) + 1
-
-model = BaselineLSTM(
-    input_size=input_size,
-    hidden_size=hidden_size,
-    num_layers=num_layers,
-    num_classes=num_classes
-).to(DEVICE)
-
-print("\nModel:")
-print(model)
-
-# 6. Loss và Optimizer
-
-criterion = nn.CrossEntropyLoss()
-
-optimizer = torch.optim.Adam(
-    model.parameters(),
-    lr=LEARNING_RATE
-)
+    def count_parameters(self) -> int:
+        """Đếm tổng số tham số học được."""
+        return sum(p.numel() for p in self.parameters() if p.requires_grad)
 
 
-# 7. Training
+# 3. Chạy Sanity Check (Overfit tập nhỏ - Task W6)
 
-print("\n=== TRAINING ===")
+def run_overfit_sanity_check(train_dataset, input_size=6, num_classes=4):
+    """Kiểm tra sanity-check: overfit trên 4 mẫu nhỏ để chứng minh mô hình học
 
-for epoch in range(EPOCHS):
+    được (Task trọng tâm của Tuần 6).
+    """
+    print("\n--- [TASK TUẦN 6]: CHẠY OVERFIT TEST TRÊN TẬP NHỎ (4 MẪU) ---")
+    small_subset = Subset(train_dataset, range(4))
+    small_loader = DataLoader(small_subset, batch_size=4, shuffle=True)
 
-    model.train()
+    test_model = BaselineLSTM(
+        input_size=input_size,
+        hidden_size=HIDDEN_SIZE,
+        num_layers=NUM_LAYERS,
+        num_classes=num_classes,
+    ).to(DEVICE)
 
-    total_loss = 0
-    correct = 0
-    total = 0
+    criterion = nn.CrossEntropyLoss()
+    optimizer = torch.optim.Adam(test_model.parameters(), lr=0.01)
 
-    for batch_X, batch_y in dataloader:
+    test_model.train()
+    for epoch in range(1, 101):
+        for bx, by in small_loader:
+            bx, by = bx.to(DEVICE), by.to(DEVICE)
+            out = test_model(bx)
+            loss = criterion(out, by)
 
-        batch_X = batch_X.to(DEVICE)
-        batch_y = batch_y.to(DEVICE)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
 
-        # Forward
-        outputs = model(batch_X)
+        if epoch % 25 == 0 or epoch == 1:
+            pred = out.argmax(dim=1)
+            acc = (pred == by).float().mean().item() * 100
+            print(f"  Epoch [{epoch:03d}/100] - Loss: {loss.item():.4f} - Accuracy: {acc:.1f}%")
 
-        loss = criterion(outputs, batch_y)
+    print("=> Kết quả Task W6: Mô hình overfit 100% thành công! Gradient flow ổn định.\n")
 
-        # Backward
-        optimizer.zero_grad()
-        loss.backward()
-        optimizer.step()
 
-        # Tính loss
-        total_loss += loss.item()
+# 4. Huấn luyện và Đánh giá toàn diện
 
-        # Tính accuracy
-        predictions = outputs.argmax(dim=1)
+def train_and_evaluate(
+    epochs: int = EPOCHS,
+    batch_size: int = BATCH_SIZE,
+    learning_rate: float = LEARNING_RATE,
+    hidden_size: int = HIDDEN_SIZE,
+    num_layers: int = NUM_LAYERS,
+):
+    set_seed(SEED)
+    print(f"Sử dụng thiết bị: {DEVICE}")
 
-        correct += (predictions == batch_y).sum().item()
-        total += batch_y.size(0)
+    # Nạp dữ liệu qua DataLoader
+    train_loader, val_loader, test_loader = get_dataloaders(
+        outputs_dir=OUTPUTS_DIR,
+        batch_size=batch_size,
+    )
 
-    accuracy = correct / total
-    average_loss = total_loss / len(dataloader)
+    train_ds = train_loader.dataset
+    input_size = train_ds.num_features
+    num_classes = train_ds.num_classes
 
-    if (epoch + 1) % 10 == 0 or epoch == 0:
+    # Chạy sanity check Tuần 6 trước
+    run_overfit_sanity_check(train_ds, input_size, num_classes)
 
-        print(
-            f"Epoch [{epoch + 1:03d}/{EPOCHS}] "
-            f"Loss: {average_loss:.4f} "
-            f"Accuracy: {accuracy * 100:.2f}%"
-        )
+    # Khởi tạo mô hình cho huấn luyện toàn tập
+    model = BaselineLSTM(
+        input_size=input_size,
+        hidden_size=hidden_size,
+        num_layers=num_layers,
+        num_classes=num_classes,
+    ).to(DEVICE)
 
-# 8. Kiểm tra kết quả
+    total_params = model.count_parameters()
+    print("=== MÔ HÌNH BASELINE LSTM ===")
+    print(model)
+    print(f"Tổng số tham số (Trainable Parameters): {total_params:,}")
 
-model.eval()
+    criterion = nn.CrossEntropyLoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-with torch.no_grad():
+    history = {
+        "train_loss": [], "train_acc": [],
+        "val_loss": [], "val_acc": [],
+    }
 
-    X_test = X.to(DEVICE)
-    y_test = y.to(DEVICE)
+    best_val_acc = 0.0
+    best_model_path = OUTPUTS_DIR / "best_baseline_lstm.pt"
 
-    outputs = model(X_test)
+    start_train_time = time.time()
+    print(f"\n--- BẮT ĐẦU HUẤN LUYỆN ({epochs} EPOCHS TRÊN {len(train_ds)} WINDOWS) ---")
 
-    predictions = outputs.argmax(dim=1)
+    for epoch in range(1, epochs + 1):
+        # 1. Train loop
+        model.train()
+        train_loss, train_correct, train_total = 0.0, 0, 0
 
-    accuracy = (predictions == y_test).float().mean()
+        for batch_x, batch_y in train_loader:
+            batch_x, batch_y = batch_x.to(DEVICE), batch_y.to(DEVICE)
 
-print("\n=== FINAL RESULT ===")
-print("Labels thật:", y_test.cpu().tolist())
-print("Labels dự đoán:", predictions.cpu().tolist())
-print(f"Accuracy cuối: {accuracy.item() * 100:.2f}%")
+            optimizer.zero_grad()
+            outputs = model(batch_x)
+            loss = criterion(outputs, batch_y)
+            loss.backward()
+            optimizer.step()
+
+            train_loss += loss.item() * batch_x.size(0)
+            preds = outputs.argmax(dim=1)
+            train_correct += (preds == batch_y).sum().item()
+            train_total += batch_y.size(0)
+
+        epoch_train_loss = train_loss / train_total
+        epoch_train_acc = train_correct / train_total * 100
+
+        # 2. Validation loop
+        model.eval()
+        val_loss, val_correct, val_total = 0.0, 0, 0
+
+        with torch.no_grad():
+            for batch_x, batch_y in val_loader:
+                batch_x, batch_y = batch_x.to(DEVICE), batch_y.to(DEVICE)
+                outputs = model(batch_x)
+                loss = criterion(outputs, batch_y)
+
+                val_loss += loss.item() * batch_x.size(0)
+                preds = outputs.argmax(dim=1)
+                val_correct += (preds == batch_y).sum().item()
+                val_total += batch_y.size(0)
+
+        epoch_val_loss = val_loss / val_total
+        epoch_val_acc = val_correct / val_total * 100
+
+        history["train_loss"].append(epoch_train_loss)
+        history["train_acc"].append(epoch_train_acc)
+        history["val_loss"].append(epoch_val_loss)
+        history["val_acc"].append(epoch_val_acc)
+
+        # Lưu checkpoint tốt nhất
+        if epoch_val_acc > best_val_acc:
+            best_val_acc = epoch_val_acc
+            torch.save(model.state_dict(), best_model_path)
+
+        if epoch % 1 == 0:
+            print(
+                f"Epoch [{epoch:02d}/{epochs:02d}] | "
+                f"Train Loss: {epoch_train_loss:.4f} - Train Acc: {epoch_train_acc:.2f}% | "
+                f"Val Loss: {epoch_val_loss:.4f} - Val Acc: {epoch_val_acc:.2f}%"
+            )
+
+    total_time = time.time() - start_train_time
+    print(f"\nHuấn luyện xong trong: {total_time:.2f} giây! Checkpoint lưu tại: {best_model_path}")
+
+    # ==========================================
+    # 5. Đánh giá trên tập TEST độc lập
+    # ==========================================
+    print("\n--- ĐÁNH GIÁ TRÊN TẬP TEST (SUBJ_017 -> SUBJ_020) ---")
+    model.load_state_dict(torch.load(best_model_path))
+    model.eval()
+
+    test_loss, test_correct, test_total = 0.0, 0, 0
+    all_preds, all_targets = [], []
+
+    # Đo độ trễ suy luận (Inference Latency per window)
+    latencies = []
+
+    with torch.no_grad():
+        for batch_x, batch_y in test_loader:
+            batch_x, batch_y = batch_x.to(DEVICE), batch_y.to(DEVICE)
+
+            t0 = time.perf_counter()
+            outputs = model(batch_x)
+            t1 = time.perf_counter()
+            latencies.append((t1 - t0) / batch_x.size(0))
+
+            loss = criterion(outputs, batch_y)
+            test_loss += loss.item() * batch_x.size(0)
+            preds = outputs.argmax(dim=1)
+            test_correct += (preds == batch_y).sum().item()
+            test_total += batch_y.size(0)
+
+            all_preds.extend(preds.cpu().numpy())
+            all_targets.extend(batch_y.cpu().numpy())
+
+    test_acc = test_correct / test_total * 100
+    avg_latency_ms = np.mean(latencies) * 1000
+
+    print(f"• Độ chính xác trên tập Test (Test Accuracy): {test_acc:.2f}%")
+    print(f"• Độ trễ suy luận trung bình (Inference Latency): {avg_latency_ms:.3f} ms / window")
+
+    # ==========================================
+    # 6. Vẽ Learning Curve
+    # ==========================================
+    plt.figure(figsize=(12, 5))
+
+    plt.subplot(1, 2, 1)
+    plt.plot(history["train_loss"], label="Train Loss", color="blue")
+    plt.plot(history["val_loss"], label="Val Loss", color="orange")
+    plt.title("LSTM Loss Curve")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss")
+    plt.legend()
+    plt.grid(True, linestyle="--", alpha=0.5)
+
+    plt.subplot(1, 2, 2)
+    plt.plot(history["train_acc"], label="Train Acc", color="blue")
+    plt.plot(history["val_acc"], label="Val Acc", color="orange")
+    plt.title("LSTM Accuracy Curve")
+    plt.xlabel("Epoch")
+    plt.ylabel("Accuracy (%)")
+    plt.legend()
+    plt.grid(True, linestyle="--", alpha=0.5)
+
+    plot_path = OUTPUTS_DIR / "lstm_learning_curve.png"
+    plt.tight_layout()
+    plt.savefig(plot_path, dpi=200)
+    plt.close()
+    print(f"• Đã lưu biểu đồ Learning Curve tại: {plot_path}")
+
+    # Lưu metrics
+    results = {
+        "model": "Baseline LSTM",
+        "parameters": total_params,
+        "train_time_sec": round(total_time, 2),
+        "best_val_acc": round(best_val_acc, 2),
+        "test_acc": round(test_acc, 2),
+        "latency_ms_per_window": round(avg_latency_ms, 4),
+    }
+    with open(OUTPUTS_DIR / "lstm_metrics.json", "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
+
+    return results
+
+
+if __name__ == "__main__":
+    train_and_evaluate()

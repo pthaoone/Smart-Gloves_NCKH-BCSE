@@ -1,0 +1,8 @@
+{
+  "model": "Baseline LSTM",
+  "parameters": 5252,
+  "train_time_sec": 12.79,
+  "best_val_acc": 99.46,
+  "test_acc": 97.58,
+  "latency_ms_per_window": 0.0128
+}
